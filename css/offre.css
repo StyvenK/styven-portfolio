@@ -1,0 +1,71 @@
+.offer-section {
+  max-width: 900px;
+  margin: 50px auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.offer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.offer-container img {
+  max-width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.offer-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.offer-description {
+  max-width: 450px;
+  text-align: left;
+}
+
+.offer-description h3 {
+  color: #ff5a36;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.offer-description p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Bouton Acheter PayPal */
+.offer-description .btn {
+  background-color: #ff5a36;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+.offer-description .btn:hover {
+  background-color: #e04a26;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .offer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .offer-description { max-width: 100%; }
+}
